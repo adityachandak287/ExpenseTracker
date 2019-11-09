@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".TabFragments.Transaction">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginBottom="32px" >
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggle_button_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            app:singleSelection="true"
+            >
+<!--            app:checkedButton="@id/incomeToggleButton"-->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/incomeToggleButton"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Income"
+                android:textColor="@color/success"
+                android:textSize="24sp" />
+
+            <!--                android:backgroundTint="@drawable/selector_button_checked"-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/expenseToggleButton"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Expense"
+                android:textColor="@color/failure"
+                android:textSize="24sp" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginHorizontal="32px"
+        android:layout_marginVertical="64px" >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Category"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:prompt="@string/categorySpinnerPrompt"
+            android:paddingTop="24sp"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginHorizontal="32px"
+        android:layout_marginVertical="64px" >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/amountTextView"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Amount"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="₹"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/amountEditText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+
+            android:ems="10"
+            android:gravity="right"
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="ADD TRANSACTION"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:textStyle="normal"
+        android:layout_marginTop="32px"
+        android:padding="32px"
+         />
+
+    <TextView
+        android:id="@+id/readTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

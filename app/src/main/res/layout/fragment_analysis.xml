@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabFragments.Analysis">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:layout_marginHorizontal="64px"
+            android:layout_marginVertical="64px"
+            android:padding="20px"
+             >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/balanceTextView"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Balance"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/balanceNumberView"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textAlignment="textEnd"
+                android:background="@color/colorPrimary"
+                />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transactionsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

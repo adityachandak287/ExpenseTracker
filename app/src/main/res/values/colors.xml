@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/cardview_dark_background</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#9E9E9E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="success">#388E3C</color>
+    <color name="failure">#FF5252</color>
+    <color name="purple">#3700B3</color>
+</resources>

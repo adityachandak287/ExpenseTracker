@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categorySpinnerPrompt">Select Category</string>
+    <string-array name="categoryArray">
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+    </string-array>
+
+
+
+</resources>

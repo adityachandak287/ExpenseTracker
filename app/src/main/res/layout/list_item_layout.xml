@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:weightSum="1.0"
+    >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.25">
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeText"
+            android:textSize="16dp"
+            android:text="00:00:00"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateText"
+            android:textSize="16dp"
+            android:text="20/00/0000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/categoryText"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:text="Pocket Money"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/amountText"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.35"
+        android:gravity="right"
+        android:text="10000.00"
+        android:textSize="24dp"/>
+
+
+</LinearLayout>
