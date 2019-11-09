@@ -8,4 +8,4 @@ Simple Android app with a Dark Material UI to track expenses.
 ## Demo
 Screenshots and this gif in full size can be found [here](/Screenshots).
 
-<img src="https://github.com/adityachandak287/ExpenseTracker/blob/master/Screenshots/Demo%202.gif" alt="alt text" width="360" height="640">
+<img src="https://github.com/adityachandak287/ExpenseTracker/blob/master/Screenshots/Demo%202.gif" alt="alt text" width="240" height="480">
